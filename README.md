@@ -18,3 +18,11 @@ You are welcome to modify the provided code for your projects and to use other p
 * TH1hist2Numpy.ipynb : an example for converting a ROOT histogram to numpy arrays
 
 Note that from ROOT you can type ```new TBrowser()``` or in Python r.TBrowser() to get a graphical browser that allows you to look at what's contained in the TFiles.
+
+Discussion on exercises =============================================================================
+
+Exercise 1: The expected error on the mean for N=1000 points is about sigma / sqrt(N) = 10/sqrt{1000} = 0.32. However, the error found on the parameter was usually between 0.01 and 0.05, which seems unreasonably low in comparison with the expected value.
+
+Exercise 2: In each case, the results were very close to the expected values. For both the Chi2 and NLL methods, the mean of the mean parameter distributions were near 50 and the mean of the sigma parameter distributions were near 10. However, the uncertainty in the parameters was consistently higher in the Chi2 case than in the NLL case. Indeed, the error on the NLL parameters was closer to the expected error.
+
+Exercise 3: The estimated p-value was 0.496. (5630): The result of the parameter error by both the scans and the fitter were small, but in each case had the NLL error slightly larger than that of the Chi2 error.  
